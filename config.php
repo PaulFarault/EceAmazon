@@ -1,6 +1,6 @@
 <?php
 
-// Etablissement de la connexion
+// Connexion à la base
 $db = mysqli_connect("localhost", "root", "", "piscine");
 
 // Vérification de la connexion
@@ -10,9 +10,5 @@ if (!$db) {
     echo "Erreur de débogage : " . mysqli_connect_error() . PHP_EOL;
     exit();
 }
-
-// Initialisation des chemins
-define ('ROOT_PATH', realpath(dirname(__FILE__)));
-define('BASE_URL', 'http://localhost/complete-blog-php/');
 
 ?>

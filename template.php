@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title><?= $title ?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -33,7 +36,19 @@
 
 			<div class="collapse navbar-collapse" id="myNavbar">
 	      		<ul class="nav navbar-nav">
-	        		<li <?=echoActiveClassIfRequestMatches("index")?>><a href="categories.php">Catégories</a></li>
+	        		<li <?=echoActiveClassIfRequestMatches("categories")?>>
+	        			<div class="dropdown">
+	        				<button class="dropbtn">
+		        				<a href="categories.php">Catégories</a>
+		        				<i class="dropbtn"></i>
+	        				</button>
+	        				<div class="dropdown-content">
+	        					<a href="#">Link1</a>
+	        					<a href="#">Link1</a>
+	        					<a href="#">Link1</a>
+	        				</div>
+	        			</div>
+	        		</li>
 	        		<li <?=echoActiveClassIfRequestMatches("ventes-flash")?>><a href="ventes-flash.php">Ventes flash</a></li>
 	        		<li <?=echoActiveClassIfRequestMatches("vendre")?>><a href="vendre.php">Vendre</a></li>
 	        		<li <?=echoActiveClassIfRequestMatches("admin")?>><a href="admin.php">Admin</a></li>
@@ -46,10 +61,11 @@
       		</div>
       	</div>
 		</nav>
+
 		<div id="content">
 	<?= $content ?></div>
 
-	<footer class="footer">
+	<footer>
   		<p>Online Store Copyright</p>  
 		<form class="form-inline">Get deals:
 			<input type="email" class="form-control" size="50" placeholder="Email Address">

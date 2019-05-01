@@ -11,17 +11,14 @@
 
 		if($resultat = mysqli_query($db,$sql)) {  
 			while ($ligne = mysqli_fetch_assoc($resultat)) { ?>
-
 				<div class="col-sm-3">
 					<div class="panel panel-default">
 				        <div class="panel-heading"><h3><?php echo($ligne["nom"]); ?></h3></div>
-				        <div class="panel-body"><img class="img-responsive" style="background-size: 50px 50px;" alt="Image" src=<?php printf('"%s"', $ligne["image"]); ?>></div>
+				        <div class="panel-body" style="padding: 0;"><img class="img-responsive" alt="Image" src=<?php printf('"%s"', $ligne["image"]); ?>></div>
 				        <div class="panel-footer"><?php echo($ligne["description"]); ?></div>
 		      		</div>
 				</div>
-
-		<?php
-			}
+			<?php }
 		} ?>
 	</div>
 
