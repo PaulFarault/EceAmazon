@@ -1,0 +1,5 @@
+.dropdown-item:focus{
+    color: #555;
+    background-color: #e7e7e7;
+}
+
