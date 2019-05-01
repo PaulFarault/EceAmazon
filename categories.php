@@ -12,10 +12,12 @@
 		if($resultat = mysqli_query($db,$sql)) {  
 			while ($ligne = mysqli_fetch_assoc($resultat)) { ?>
 				<div class="col-sm-3">
-					<div class="panel panel-default">
-				        <div class="panel-heading"><h3><?php echo($ligne["nom"]); ?></h3></div>
-				        <div class="panel-body" style="padding: 0;"><img class="img-responsive" alt="Image" src=<?php printf('"%s"', $ligne["image"]); ?>></div>
-				        <div class="panel-footer"><?php echo($ligne["description"]); ?></div>
+					<div class="card" style="widht: 18rem;">
+						<img class="card-img-top" alt="" src=<?php printf('"%s"', $ligne["image"]); ?>>
+						<div class="card-body">
+    						<h5 class="card-title"><?php echo($ligne["nom"]); ?></h5>
+    						<p class="card-text"><?php echo($ligne["description"]); ?></p>
+  						</div>
 		      		</div>
 				</div>
 			<?php }
