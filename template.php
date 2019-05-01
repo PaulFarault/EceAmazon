@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="h-100">
 <head>
-  <title><?php $title ?></title>
+  <title><?=$title ?></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS (Bootstrap, Font Awesome, custom) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- JS (jQuery, Popper, Bootstrap) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 	<!-- Element de titre -->
 	<div class="jumbotron">
 		<div class="container text-center">
@@ -41,33 +41,33 @@
   		<div class="collapse navbar-collapse" id="navbarNavDropdown">
     		<ul class="navbar-nav">
       			<li class="nav-item dropdown">
-        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        			<a class="nav-link dropdown-toggle" href="categories.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           				Catégories
         			</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="#">Livres</a>
-          				<a class="dropdown-item" href="#">Musique</a>
-          				<a class="dropdown-item" href="#">Vêtements</a>
-          				<a class="dropdown-item" href="#">Sports et Loisir</a>
+          				<a class="dropdown-item" href="categories.php">Livres</a>
+          				<a class="dropdown-item" href="categories.php">Musique</a>
+          				<a class="dropdown-item" href="categories.php">Vêtements</a>
+          				<a class="dropdown-item" href="categories.php">Sports et Loisir</a>
         			</div>
       			</li>
       			<li class="nav-item">
-        			<a class="nav-link" href="#">Ventes flash</a>
+        			<a class="nav-link" href="ventes-flash.php">Ventes flash</a>
       			</li>
 				<li class="nav-item">
-			    	<a class="nav-link" href="#">Vendre</a>
+			    	<a class="nav-link" href="vendre.php">Vendre</a>
 			  	</li>
 			  	<li class="nav-item">
-			    	<a class="nav-link" href="#">Admin</a>
+			    	<a class="nav-link" href="admin.php">Admin</a>
 			  	</li>
       		</ul>
 
     		<ul class="navbar-nav ml-auto">
       			<li class="nav-item">
-        			<a class="nav-link" href="#"><i class="fa fa-user"></i>Votre compte</a>
+        			<a class="nav-link" href="compte.php"><i class="fa fa-user"></i> Votre compte</a>
      	 		</li>
       			<li class="nav-item">
-        			<a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> Panier</i></a>
+        			<a class="nav-link" href="panier.php"><i class="fa fa-shopping-cart"></i> Panier</i></a>
       			</li>
     		</ul>
   		</div>
@@ -75,11 +75,11 @@
 
 	<!-- Contenu de la page -->
 	<div id="content">
-		<?php $content ?>
+		<?=$content ?>
 	</div>
 
 	<!-- Footer -->
-	<footer>
+	<footer class="footer mt-auto py-3 bg-dark">
   		<p>Online Store Copyright</p>  
 		<form class="form-inline">Get deals:
 			<input type="email" class="form-control" size="50" placeholder="Email Address">
