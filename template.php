@@ -14,7 +14,7 @@
 <body>
 		<div class="jumbotron">
 			<div class="container text-center">
-				<img style="height: 100px;" src="img/logo.png">
+				<a href="index.php"><img style="height: 100px;" src="img/logo.png"></a>
 			</div>
 		</div>
 					<!--https://stackoverflow.com/questions/11813498/make-twitter-bootstrap-navbar-link-active
@@ -33,7 +33,7 @@
 
 			<div class="collapse navbar-collapse" id="myNavbar">
 	      		<ul class="nav navbar-nav">
-	        		<li <?=echoActiveClassIfRequestMatches("index")?>><a href="index.php">Catégories</a></li>
+	        		<li <?=echoActiveClassIfRequestMatches("index")?>><a href="categories.php">Catégories</a></li>
 	        		<li <?=echoActiveClassIfRequestMatches("ventes-flash")?>><a href="ventes-flash.php">Ventes flash</a></li>
 	        		<li <?=echoActiveClassIfRequestMatches("vendre")?>><a href="vendre.php">Vendre</a></li>
 	        		<li <?=echoActiveClassIfRequestMatches("admin")?>><a href="admin.php">Admin</a></li>
@@ -46,8 +46,8 @@
       		</div>
       	</div>
 		</nav>
-
-	<?= $content ?>
+		<div id="content">
+	<?= $content ?></div>
 
 	<footer class="footer">
   		<p>Online Store Copyright</p>  
