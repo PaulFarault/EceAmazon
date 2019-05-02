@@ -1,18 +1,19 @@
-/* Header*/
+/* Header */
 .jumbotron {
     margin-bottom: 0;
 }
 .navbar {
     border-radius: 0;
 }
-.dropdown-item:focus{   /* Fond du menu déroulant */
+.dropdown-item:focus{
     color: #555;
     background-color: #e7e7e7;
 }
 
 #content {
 	max-width: 1200px;
+	width: 100%;
+	background-color: lightgrey;
 	padding: 15px;
 	margin: auto;
 }
-

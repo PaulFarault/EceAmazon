@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
 <head>
+  <meta charset="utf-8">
   <title><?=$title ?></title>
   <link rel="icon" href="img/favicon.ico" />
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS (Bootstrap, Font Awesome, custom) -->
@@ -81,7 +82,7 @@
 
 	<!-- Footer -->
 	<footer class="footer mt-auto py-3 bg-dark">
-  		<p>Online Store Copyright</p>  
+  		<p>Online Store Copyright</p>
 		<form class="form-inline">Get deals:
 			<input type="email" class="form-control" size="50" placeholder="Email Address">
 			<button type="button" class="btn btn-danger">Sign Up</button>
