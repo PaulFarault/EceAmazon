@@ -4,7 +4,7 @@
 
 <div id="content">
 
-	<h1>Admin</h1>
+	<h1>Page administrateur</h1>
 
 </div>
 <?php $content = ob_get_clean(); ?>

@@ -12,7 +12,7 @@
 		if($resultat = mysqli_query($db,$sql)) {  
 			while ($ligne = mysqli_fetch_assoc($resultat)) {
 				echo($ligne["nom"]);?>
-				<img src=<?php printf('"%s"', $ligne["photos"]);?> >
+				<img src=<?php printf('"%s"', $ligne["photos"]);?>
 			<?php }
 		} else {
 			echo "Dsl, rien en vente aujourd'hui :(";
