@@ -6,23 +6,18 @@
 
 	<h1><?php echo($title); ?></h1>
 
-	<div class="row">
-		<?php $sql = "SELECT * FROM categorie";
+
+		<?php $sql = "SELECT * FROM item WHERE id_categorie = 1";
 
 		if($resultat = mysqli_query($db,$sql)) {  
-			while ($ligne = mysqli_fetch_assoc($resultat)) { ?>
-				<div class="col-sm-3">
-					<div class="card" style="widht: 18rem;">
-						<img class="card-img-top" alt="" src=<?php printf('"%s"', $ligne["image"]); ?>>
-						<div class="card-body">
-    						<h5 class="card-title"><?php echo($ligne["nom"]); ?></h5>
-    						<p class="card-text"><?php echo($ligne["description"]); ?></p>
-  						</div>
-		      		</div>
-				</div>
+			while ($ligne = mysqli_fetch_assoc($resultat)) {
+				echo($ligne["nom"]);?>
+				<img src=<?php printf('"%s"', $ligne["photos"]);?> >
 			<?php }
+		} else {
+			echo "Dsl, rien en vente aujourd'hui :(";
 		} ?>
-	</div>
+
 
 <?php $content = ob_get_clean(); ?>
 
