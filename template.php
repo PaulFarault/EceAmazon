@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
 <head>
-  <meta charset="utf-8">
-  <title><?=$title ?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?=$title ?></title>
   <link rel="icon" href="img/favicon.ico" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
