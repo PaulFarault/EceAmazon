@@ -93,7 +93,6 @@
         <div class="col-md-8 ">
             <p>&copy; ECE Amazon : Projet Web Dynamique 2019 - Paul Faurault et Thomas LAURENT</p>
         </div>
-
       </div>
     </div>
   </footer>
