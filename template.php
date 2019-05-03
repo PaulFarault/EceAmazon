@@ -17,7 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-	<?php include_once 'functions.php' ?>
+    <?php include_once 'functions.php' ?>
 
 </head>
 
@@ -31,8 +31,9 @@
 	
 	<!-- Menu -->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Petit logo et Ece Amazon ramenant à la page index -->
   		<a class="navbar-brand" href="#">
-    		<img src="../img/logo_blanc_petit" height="25" class="d-inline-block align-top">
+    		<img src="img/logo_blanc_petit" height="25" class="d-inline-block align-top">
     		ECE Amazon
   		</a>
 
@@ -69,7 +70,7 @@
         			<a class="nav-link" href="compte.php"><i class="fa fa-user"></i> Votre compte</a>
      	 		</li>
       			<li class="nav-item">
-        			<a class="nav-link" href="panier.php"><i class="fa fa-shopping-cart"></i> Panier</i></a>
+        			<a class="nav-link" href="panier.php"><i class="fa fa-shopping-cart"></i> Panier</a>
       			</li>
     		</ul>
   		</div>
@@ -81,13 +82,21 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="footer mt-auto py-3 bg-dark">
-  		<p>Online Store Copyright</p>
-		<form class="form-inline">Get deals:
-			<input type="email" class="form-control" size="50" placeholder="Email Address">
-			<button type="button" class="btn btn-danger">Sign Up</button>
-		</form>
-	</footer>
+	<footer class="page-footer font-small bg-dark pt-2">
+    <div class="container">
+      <div class="row">
+        <!-- Colonne gauche : contact-->
+        <div class="col-md-4">
+          <a href="mailto:thomas.laurent@edu.ece.fr"><p>Nous contacter par mail</p></a>
+        </div>
+        <!-- Colonne droite : copyright-->
+        <div class="col-md-8 ">
+            <p>&copy; ECE Amazon : Projet Web Dynamique 2019 - Paul Faurault et Thomas LAURENT</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
