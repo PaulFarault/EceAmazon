@@ -7,11 +7,18 @@
 	margin: auto;
 }
 
-img {
+.img {
 	float: left;
+	width: 250px;
+	background-color: pink;
 }
 
-div {
+img {
+	height: 180px;
+	margin: auto;
+}
 
+article {
+	display: flex;
 	flex-direction: column;
 }
