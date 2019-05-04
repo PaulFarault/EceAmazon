@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 03 mai 2019 à 18:52
+-- Généré le :  sam. 04 mai 2019 à 17:00
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -144,14 +144,34 @@ CREATE TABLE IF NOT EXISTS `item` (
   PRIMARY KEY (`id_item`),
   KEY `id_categorie` (`id_categorie`),
   KEY `id_vendeur` (`id_vendeur`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `item`
 --
 
 INSERT INTO `item` (`id_item`, `nom`, `photos`, `description`, `video`, `pu`, `variations`, `stock`, `id_categorie`, `id_vendeur`) VALUES
-(1, 'L\'internationale', NULL, 'Vroum vroum', NULL, 3, NULL, 1, 2, 2);
+(1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'Martine et son pote unijambiste', '/img/categorie/livres/1.jpg', 'Super livre, je recommande', NULL, 3, NULL, 1, 1, 2),
+(3, 'Martine deale du Maroilles', '/img/categorie/livres/2.jpg', 'Pour les fans de gastronomie française.', NULL, 5, NULL, 3, 1, 2),
+(4, 'Martine a loupé la pride', '/img/categorie/livres/3.jpg', 'Quelle tristesse :\'(', NULL, 1, NULL, 0, 1, 2),
+(5, 'Martine au mariage de Carla Bruni', '/img/categorie/livres/4.jpg', 'C\'est petit', NULL, 0, NULL, 0, 1, 2),
+(6, 'Martine travaille plus pour gagner plus', '/img/categorie/livres/5.jpg', 'A tomber de rire !', NULL, 10, NULL, 3, 1, 2),
+(7, 'Martine aime le Beaujolais', '/img/categorie/livres/6.jpg', 'Quelle bonne vivante cette martine', NULL, 0, NULL, 4, 1, 2),
+(8, 'Martine va conclure avec Jean-Claude Dus', '/img/categorie/livres/7.jpg', 'Quand te reverais-jeeeuh payys merveilleuuuuux', NULL, 5, NULL, 1, 1, 2),
+(9, 'Martine et la réforme des rythmes scolaires', '/img/categorie/livres/8.jpg', 'Roule Martine, roule !', NULL, 2, NULL, 3, 1, 2),
+(10, 'Martine a loupé son test ADN', '/img/categorie/livres/9.jpg', 'Dure réalité pour titine', NULL, 5, NULL, 2, 1, 2),
+(11, 'Martine et le gogo danceur surprise', '/img/categorie/livres/10.jpg', 'La chanceuse', NULL, 4, NULL, 3, 1, 2),
+(13, 'Martine chef de gang', '/img/categorie/livres/11.jpg', 'Ca tourne mal', NULL, 1, NULL, 3, 1, 2),
+(14, 'Martine a un sixième sens', '/img/categorie/livres/12.jpg', 'Elle voit des gens, qui sont mooooorts :o :o :o', NULL, 3, NULL, 3, 1, 2),
+(15, 'L\'internationale - Eugène Pottier', '/img/categorie/musique/1.jpg', 'L\'internationale, sera le genre humain', 'https://www.youtube.com/watch?v=kEZhCB8KdWw', 2, NULL, 0, 2, 2),
+(16, 'Roi - Bilal Hassani', '/img/categorie/musique/2.jpg', 'Destination eurovision <3', 'https://www.youtube.com/watch?v=Z4X4ygjcUd4', 0, NULL, 0, 2, 2),
+(17, 'Vogue - Madonna', '/img/categorie/musique/3.jpg', 'Come on, vooogue', 'https://www.youtube.com/watch?v=GuJQSAiODqI', 0, NULL, 0, 2, 2),
+(18, 'Thank U, Next', '/img/categorie/musique/4.jpg', 'Next.', 'https://www.youtube.com/watch?v=gl1aHhXnN1k', 0, NULL, 0, 2, 2),
+(19, 'Sissy that walk - Ru Paul', '/img/categorie/musique/5.jpg', 'Fly, fly, fly, fly Uh ooooh, uh uh-ooooh', 'https://www.youtube.com/watch?v=M4d20Tyzlv0', 0, NULL, 0, 2, 2),
+(20, 'Brazil - Declan McKenna', '/img/categorie/musique/6.jpg', 'I\'M IN BRAZIL', 'https://www.youtube.com/watch?v=QHgh77iE6qc', 0, NULL, 0, 2, 2),
+(21, 'Grave - Eddy de Pretto', '/img/categorie/musique/7.jpg', 'Ce n\'est vraiment pas grave', 'https://www.youtube.com/watch?v=kX30U0FmTuo', 0, NULL, 0, 2, 2),
+(22, 'Born this way - Lady Gaga', '/img/categorie/musique/8.jpg', 'I\'M BEAUTIFUL IN MY WAY \'CAUSE GOD MAKES NO MISTAKES', 'https://www.youtube.com/watch?v=wV1FrqwZyKw', 0, NULL, 0, 2, 2);
 
 -- --------------------------------------------------------
 

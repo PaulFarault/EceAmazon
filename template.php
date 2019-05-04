@@ -48,10 +48,10 @@
           				Catégories
         			</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          				<a class="dropdown-item" href="categories.php">Livres</a>
-          				<a class="dropdown-item" href="categories.php">Musique</a>
-          				<a class="dropdown-item" href="categories.php">Vêtements</a>
-          				<a class="dropdown-item" href="categories.php">Sports et Loisir</a>
+          				<a class="dropdown-item" href="categories.php?c=livres">Livres</a>
+          				<a class="dropdown-item" href="categories.php?c=musique">Musique</a>
+          				<a class="dropdown-item" href="categories.php?c=vetements">Vêtements</a>
+          				<a class="dropdown-item" href="categories.php?c=sports">Sports et Loisir</a>
         			</div>
       			</li>
       			<li class="nav-item">
