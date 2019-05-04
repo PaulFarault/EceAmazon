@@ -9,7 +9,7 @@
 	<div class="row">
 		<?php $sql = "SELECT * FROM categorie";
 
-		if($resultat = mysqli_query($db,$sql)) {  
+		if($resultat = mysqli_query($db,$sql)) { 
 			while ($ligne = mysqli_fetch_assoc($resultat)) { ?>
 				<div class="col-sm-3">
 					<div class="card" style="widht: 18rem;">

@@ -37,7 +37,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center mb-4 mt-1">S'inscrire</h3>
-	    		<input type="button" value="S'inscrire">
+	    		<a href ="inscription.php"><input type="button" value="S'inscrire"></a>
 	    	</div>
 	    </div>
 	</div>
