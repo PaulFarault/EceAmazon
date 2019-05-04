@@ -10,10 +10,48 @@
     background-color: #e7e7e7;
 }
 
+/* Contenu de chaque page */
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 #content {
 	max-width: 1200px;
 	width: 100%;
-	background-color: lightgrey;
 	padding: 15px;
 	margin: auto;
+}
+
+/* Catégorie */
+.liste-item {
+	min-width: 300px;
+	border: solid 0.5px black;
+	padding: 0;
+}
+.liste-item-img {
+	margin: 2px;
+	background-color:white;
+}
+.liste-item-img img {
+	height: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.liste-item-content {
+	padding:15px;
+	padding-top: 0;
+}
+.liste-item span {
+	color: yellow;
+	font-weight: bold;
+}
+.liste-item:hover {
+	background-color: yellow;
+	border-color: yellow;
+}
+.liste-item:hover span {
+	color:white;
 }
