@@ -10,8 +10,8 @@
     <form method="link" action="validation.php">
         <div class="form-row">
             <div class="form-group col-md-4">
-                <label for="inputNomCarte">Nom :</label>
-                <input type="text" class="form-control" id="inputNomCarte" placeholder="NomCarte">
+                <label for="inputNomCarte">Nom indiqué sur la carte :</label>
+                <input type="text" class="form-control" id="inputNomCarte" placeholder="Nom sur la Carte">
             </div>
             <div class="form-group col-md-2">
                 <label for="inputType">Type :</label>
