@@ -8,41 +8,23 @@
 		<div class="card">
 			<div class="card-body">
 				<h3 class="card-title text-center mb-4 mt-1">Se connecter</h3>
-				<form>
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-prepend">
-			    				<span class="input-group-text"> <i class="fa fa-user"></i> </span>
-			 				</div>
-							<input name="" class="form-control" placeholder="Email or login" type="email">
-						</div> <!-- input-group.// -->
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-prepend">
-			    				<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-			 				</div>
-		    				<input class="form-control" placeholder="******" type="password">
-						</div> <!-- input-group.// -->
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary btn-block"> Login  </button>
-					</div> <!-- form-group// -->
-					<p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm">
-		<div class="card">
-			<div class="card-body">
-				<h3 class="card-title text-center mb-4 mt-1">S'inscrire</h3>
-	    		<a href ="inscription.php"><input type="button" value="S'inscrire"></a>
-	    	</div>
-	    </div>
-	</div>
+                
+                <form method="link" action="compte.php">
+                  <div class="row">
+                    <div class="col">
+                        <label for="inputPhoto">Ajouter une photo ou une vidéo :</label>
+                        <input type="photo" class="form-control" placeholder="Ajouter un fichier">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                  </div>
+                </form>
+            
+		  </div>
+	   </div>
+    </div>
 </div>
-
 
 
 <?php $content = ob_get_clean(); ?>
