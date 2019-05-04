@@ -32,7 +32,7 @@
 	<!-- Menu -->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!-- Petit logo et Ece Amazon ramenant à la page index -->
-  		<a class="navbar-brand" href="#">
+  		<a class="navbar-brand" href="index.php">
     		<img src="img/logo_blanc_petit" height="25" class="d-inline-block align-top">
     		ECE Amazon
   		</a>
