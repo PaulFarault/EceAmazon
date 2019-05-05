@@ -1,3 +1,5 @@
+<!-- Page function.html -->
+
 <?php 
 
 function echoActiveClassIfRequestMatches($requestUri)

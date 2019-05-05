@@ -1,48 +1,65 @@
+<!-- Connexion au compte -->
+
 <?php require_once('config.php'); ?>
+
 <?php  $title = 'Connexion'; ?>
 
 <?php ob_start(); ?>
 
-<div class="row">
-	<div class="col-sm">
-		<div class="card">
-			<div class="card-body">
-				<h3 class="card-title text-center mb-4 mt-1">Se connecter</h3>
-				<form>
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-prepend">
-			    				<span class="input-group-text"> <i class="fa fa-user"></i> </span>
-			 				</div>
-							<input name="" class="form-control" placeholder="Email or login" type="email">
-						</div> <!-- input-group.// -->
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-prepend">
-			    				<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-			 				</div>
-		    				<input class="form-control" placeholder="******" type="password">
-						</div> <!-- input-group.// -->
-					</div> <!-- form-group// -->
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary btn-block"> Login  </button>
-					</div> <!-- form-group// -->
-					<p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm">
-		<div class="card">
-			<div class="card-body">
-				<h3 class="card-title text-center mb-4 mt-1">S'inscrire</h3>
-	    		<input type="button" value="S'inscrire">
-	    	</div>
-	    </div>
-	</div>
-</div>
+	<?php
+	if (isset($_POST) AND !empty($_POST)) {
+		if (!empty(htmlspecialchars($_POST['mail'])) AND !empty(htmlspecialchars($_POST['mdp']))) {
+			$req = $db->prepare('SELECT * FROM utilisateur WHERE mail = :mail AND mdp = :mdp');
+			$req->execute([
+				'mail' => $_POST['mail'],
+				'mdp' => $_POST['mdp']
 
+			]);
+			$user = $req->fetchObject();
+			if ($user) {
+				$_SESSION['admin']= $_POST['mail'];
+				header('location:admin.php');
+			}else{
+				$error = 'identifiants incorrect';
+			}
+		}
+		else {
+			$error = 'Veuillez remplir toutes les cases !';
+		}
+		if (isset($error)) {
+			echo '<p>'. $error .'</p>';
+		}
+	}
+?>
+
+
+    <!-- Formulaire de conexion -->
+    <form method="link" action="admin.php" method="POST">
+        
+        <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Adresse mail :</label>
+                    <input type="mail" class="form-control" name ="mail" placeholder="adresse@exemple.com">
+                </div>  
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Mot de passe :</label>
+                    <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                </div>
+        </div>
+            
+        <div class="form-row">
+            <div class="form-group col-md-7">
+            </div>
+            <div class="form-group col-md-5">
+                <a href="inscription.php"><button type="button" class="btn btn-primary">S'inscrire</button></a>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </div>
+
+        </div>
+        
+    </form>
+	
 
 
 <?php $content = ob_get_clean(); ?>

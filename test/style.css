@@ -1,6 +1,42 @@
 /* Fond du menu déroulant */
-.dropdown-item:focus{
-    color: #555;
-    background-color: #e7e7e7;
+.content {
+	max-width: 1200px;
+	width: 100%;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: auto;
 }
 
+
+.vignette {
+	height: 150px;
+	margin: auto;
+	max-width: 100%;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/*	margin: auto;
+.img {
+	float: left;
+	width: 250px;
+	background-color: pink;
+}
+
+div {
+	display: flex;
+}
+
+img {
+	height: 180px;
+	margin: auto;
+}
+
+article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}*/

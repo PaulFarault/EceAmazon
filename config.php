@@ -1,3 +1,6 @@
+<!-- Configuration du lien entre le liste internet et la base de donnée -->
+
+
 <?php
 
 // Connexion à la base

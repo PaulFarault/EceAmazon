@@ -1,0 +1,24 @@
+Liste des pages :
+
+Index - a faire
+catégories - a faire
+Livres - a faire
+Musique - a faire
+Vêtements - a faire
+Sports et loisirs - a faire
+Item - a faire
+Ventes flash - a faire
+Ajouter un item - a faire
+Connexion - a faire
+Inscription - a faire
+Vendre - a faire
+Admin - a faire
+Gestion vendeurs - a faire
+Ajouter un vendeur - a faire
+Gestion des items - a faire
+Information livraison - a faire
+Information paiement - a faire
+Validation - a faire
+Modification des informations - a faire
+Panier - a faire
+Compte - a faire
