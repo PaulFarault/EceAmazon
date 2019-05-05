@@ -44,13 +44,17 @@
 		if($resultat = mysqli_query($db,$sql)) {
 			while ($ligne = mysqli_fetch_assoc($resultat)) {
 		?>
+		
 			<div class="col-sm liste-item">
+				<a href= <?php printf("item.php?i=%s", $ligne['id_item']); ?> >
 				<div class="liste-item-img"><img src= <?php printf('"%s"', $ligne['photos']); ?> ></div>
 				<div class="liste-item-content">
 					<h3 class="card-title"> <?php echo(utf8_encode($ligne["nom"])); ?> - <span><?php echo(utf8_encode($ligne["pu"])); ?> €</span></h3>
 					<p class="card-text"> <?php echo(utf8_encode($ligne["description"])); ?> </p>
 				</div>
+				</a>
 			</div>
+		
 		<?php }
 		}
 		?>
