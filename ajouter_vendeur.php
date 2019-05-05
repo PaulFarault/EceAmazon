@@ -8,7 +8,6 @@
     
         
     <form method="link" action="gestion_vendeur.php">
-    
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputNom">Nom indiqué sur la carte :</label>
@@ -32,8 +31,9 @@
         
         <!-- Boutton submit -->
         <div class="form-row">
-            <div class="form-group col-md-5"></div>
-            <div class="form-group col-md-7">
+            <div class="form-group col-md-3"></div>
+            <div class="form-group col-md-9">
+                <a href="gestion_vendeur.php"><button type="button" class="btn btn-primary">Ajouter un vendeur</button></a>
                 <button type="submit" class="btn btn-primary">Ajouter un vendeur</button>
             </div>
         </div>
