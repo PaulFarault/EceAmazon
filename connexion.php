@@ -30,37 +30,28 @@
 	}
 ?>
 
-    <form method="link" action="admin.php">
+    <form method="link" action="admin.php" method="POST">
         
         <div class="form-row">
-        	<form action="connexion.php" method="POST">
                 <div class="form-group col-md-6">
-                <label for="inputEmail">Adresse mail :</label>
-                <input type="mail" class="form-control" name ="mail" placeholder="adresse@exemple.com">
+                    <label for="inputEmail">Adresse mail :</label>
+                    <input type="mail" class="form-control" name ="mail" placeholder="adresse@exemple.com">
                 </div>  
 
                 <div class="form-group col-md-6">
-                <label for="inputPassword">Mot de passe :</label>
-<<<<<<< HEAD
-                <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">         
-            </div>
-        </div><br>
+                    <label for="inputPassword">Mot de passe :</label>
+                    <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                </div>
+        </div>
             
         <div class="form-row">
-            
             <div class="form-group col-md-7">
             </div>
             <div class="form-group col-md-5">
                 <a href="inscription.php"><button type="button" class="btn btn-primary">S'inscrire</button></a>
                 <button type="submit" class="btn btn-primary">Se connecter</button>
             </div>
-=======
-                <input type="password" class="form-control" name="mdp" placeholder="Mot de passe">
-                </div>
 
-                <button class="btn btn-outline-secondary">Se connecter</button>
-            </form>
->>>>>>> b9950953d933e39997583533316f9ceba8da7479
         </div>
         
     </form>
