@@ -61,3 +61,15 @@ a {
 a :hover {
 	text-decoration: none;
 }
+
+/* Item */
+#qte {
+	width:70px;
+}
+.vignettes {
+	width: 100%;
+	background-color: lightgrey;
+	padding:10px;
+	margin: 0;
+	margin-bottom: 20px;
+}
