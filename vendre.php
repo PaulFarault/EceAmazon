@@ -12,8 +12,11 @@
     
     <div class="form-row">
         <div class="form-group col-md-4"></div>
-        <div class="form-group col-md-3"><a href="ajouter_item.php"><button type="button" class="btn btn-primary">Vendre un nouvel article</button></a></div>
-        <div class="form-group col-md-4"><a href="ajouter_item.php"><button type="button" class="btn btn-primary">Supprimer un de vos articles</button></a></div>
+        <div class="form-group col-md-3">
+            <a href="ajouter_item.php"><button type="button" class="btn btn-primary">Vendre un nouvel article</button></a></div>
+        <div class="form-group col-md-4">
+            <a href="gestion_items.php"><button type="button" class="btn btn-primary">Supprimer un de vos articles</button></a>
+        </div>
     </div>
 
 </div>
