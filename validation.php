@@ -19,7 +19,7 @@
         <div class="form-group col-md-2"><h3>Prix total :</h3></div>
         <div class="form-group col-md-1"></div>
         <div class="form-group col-md-3">
-            <a href="gestion_items.php"><button type="button" class="btn btn-primary">Valider votre commande</button></a>
+            <a href="index.php"><button type="button" class="btn btn-primary">Valider votre commande</button></a>
         </div>
     </div>
 

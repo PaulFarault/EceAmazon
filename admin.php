@@ -4,7 +4,7 @@
 
 <div id="content">
 
-	<h1>Page administrateur</h1>
+	<h1>Page administrateur</h1><br><br>
 
 	<!--?php if (!$_SESSION['admin']) {
 	header('location:connexion.php');
@@ -12,18 +12,21 @@
     
     <div class="form-row">
         
-        <div class="form-group col-md-5">
+        <div class="form-group col-md-1">
+        </div>
+        
+        <div class="form-group col-md-4">
             <h2>Ajouter un vendeur</h2>
-            <div class="card" style="widht: 15rem;">
-				<a href="gestion_vendeur.php"><img class="card-img-top" alt="Photo introuvable" src="/img/vendeur.jpg" ></a>
+            <div class="card" style="widht: 18rem;">
+				<a href="gestion_vendeur.php"><img class="card-img-top" alt="Photo introuvable" src="/img/vendeur.jpg"></a>
             </div>
         </div>
         
-        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-2"></div>
         
-        <div class="form-group col-md-5">
+        <div class="form-group col-md-4">
             <h2>Ajouter un vendeur</h2>
-            <div class="card" style="widht: 15rem;">
+            <div class="card" style="widht: 18rem;">
 				<a href="gestion_items.php"><img class="card-img-top" alt="Photo introuvable" src="/img/item.png" ></a>
             </div>
         </div>
