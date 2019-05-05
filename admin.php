@@ -6,6 +6,10 @@
 
 	<h1>Page administrateur</h1>
 
+	<<?php if (!$_SESSION['admin']) {
+	header('location:connexion.php');
+} ?>
+
 </div>
 <?php $content = ob_get_clean(); ?>
 
