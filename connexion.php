@@ -3,32 +3,33 @@
 
 <?php ob_start(); ?>
 
-    <form method="link" action="admin.php">
+    <form method="link" action="compte.php">
         
         <div class="form-row">
-        
+            <div class="form-group col-md-3">
+            </div>
             <div class="form-group col-md-6">
-                <div class="form-group col-md-6">
                 <label for="inputEmail">Adresse mail :</label>
                 <input type="mail" class="form-control" id="inputEmail" placeholder="adresse@exemple.com">
-                </div>  
-            </div>
-        <div/>
-            
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <div class="form-group col-md-6">
-                <label for="inputPassword">Mot de passe :</label>
-                <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">
-                </div>           
             </div>
         </div>
             
-            <div class="form-group col-md-5">
+        <div class="form-row">
+            
+            <div class="form-group col-md-3">
             </div>
-            <div class="form-group col-md-7">
-                
-                
+            <div class="form-group col-md-6">
+                <label for="inputPassword">Mot de passe :</label>
+                <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">         
+            </div>
+        </div><br>
+            
+        <div class="form-row">
+            
+            <div class="form-group col-md-8">
+            </div>
+            <div class="form-group col-md-3">
+                <button type="submit" class="btn btn-primary">Se connecter</button>
             </div>
             
         </div>
