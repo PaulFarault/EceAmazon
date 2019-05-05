@@ -1,3 +1,6 @@
+<!-- Page permettant aux acheteurs de remplire les informations de livraison 
+    lors de  l'achat d'un articles -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

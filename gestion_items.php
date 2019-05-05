@@ -1,3 +1,5 @@
+<!-- Page de gestion des items, accessible par les utilisateurs de statut administrateur et vendeur -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

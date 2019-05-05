@@ -1,3 +1,5 @@
+<!-- Connexion au compte -->
+
 <?php require_once('config.php'); ?>
 
 <?php  $title = 'Connexion'; ?>
@@ -30,6 +32,8 @@
 	}
 ?>
 
+
+    <!-- Formulaire de conexion -->
     <form method="link" action="admin.php" method="POST">
         
         <div class="form-row">

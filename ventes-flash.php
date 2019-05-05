@@ -1,3 +1,6 @@
+<!-- Page de ventes-flash : censée contenir les articles les plus vendu de la semaine,
+    par catégorie -->
+
 <?php  $title = 'Ventes flash'; ?>
 
 <?php ob_start(); ?>

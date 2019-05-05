@@ -1,3 +1,6 @@
+<!-- Page du panier : regroupe les éléments désirés par l'acheteur, permet de les modifier, 
+    affiche le prix total du panier et de passer à la phase d'achat -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

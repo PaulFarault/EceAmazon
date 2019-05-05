@@ -1,3 +1,5 @@
+<!-- Modifications informations personnelles de l'utilisateur -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

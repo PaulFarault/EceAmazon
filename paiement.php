@@ -1,3 +1,5 @@
+<!-- Page de paiement, permet à l'acheteur de rentrer ses informations de paiement, avant de valider l'achat -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

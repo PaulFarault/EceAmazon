@@ -1,3 +1,7 @@
+<!-- Page permettant aux vendeurs de remplir un formulaire de vente afin de mettre en ligne
+    son annonce -->
+
+
 <?php  $title = 'Vendre'; ?>
 
 <?php ob_start(); ?>

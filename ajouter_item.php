@@ -1,12 +1,13 @@
-<?php  $title = 'Panier'; ?>
+<!-- Page d'ajout d'item, permet à l'utilisateur de mettre en vente un article -->
 
+<?php  $title = 'Panier'; ?>
 <?php ob_start(); ?>
 
 <div id="content">
 
 	<h1>Ajouter un article</h1>
     
-    
+    <!-- Formulaire de mise en ligne d'un item -->
     <form method="link" action="vendre.php">
         
         <div class="form-row">
@@ -55,7 +56,7 @@
             </div>
         </div>
     
-        <!-- Boutton submit -->
+        <!-- Boutton submit : finalise la mise en ligne et rammène l'utilisateur à la page vendre.php -->
         <div class="form-row">
             <div class="form-group col-md-10"></div>
             <div class="form-group col-md-2">
@@ -68,6 +69,6 @@
 </div>
 
 
+<!-- Appel du template -->
 <?php $content = ob_get_clean(); ?>
-
 <?php require('template.php'); ?>

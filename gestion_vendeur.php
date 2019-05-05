@@ -1,3 +1,7 @@
+<!-- Page de gestion des vendeurs, accessible par les utilisateurs de statut administrateur. Elle lui permet
+    d'en ajouter ou d'en supprimer -->
+
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

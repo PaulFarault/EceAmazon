@@ -1,3 +1,5 @@
+<!-- Code PHP permettant de générer les pages des articles -->
+
 <?php  $title = 'Item'; 
 require_once('config.php');
 $id_item = $_GET["i"];

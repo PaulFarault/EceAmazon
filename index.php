@@ -1,3 +1,5 @@
+<!-- Page index : page principale du site internet, affiche les quatrezs catégories -->
+
 <?php require_once('config.php'); ?>
 
 <?php  $title = 'ECE Amazon'; ?>

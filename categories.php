@@ -1,8 +1,14 @@
+<!-- Page catégorie : nous amène sur la page de la catégorie choisie : Livre, Musique, Vetement et Sports et loisirs -->
+
+
+
+
 <?php
 	require_once('config.php');
 
 	$get = $_GET["c"];
 
+    /** Choix de la page */
 	switch ($get) {
 		case 'livres':
 			$id_cat = 1;
@@ -30,6 +36,7 @@
 			break;
 	}
 
+    /** Requette : sélection des articles de la catégorie choisie */
 	$sql = 'SELECT * FROM item WHERE id_categorie ="'. $id_cat . '"';
 
 	?>
@@ -40,6 +47,7 @@
 
 		<div class="row row-ed-height">
 
+        <!-- Affichage des articles -->
 		<?php
 		if($resultat = mysqli_query($db,$sql)) {
 			while ($ligne = mysqli_fetch_assoc($resultat)) {
@@ -64,4 +72,5 @@
 
 <?php $content = ob_get_clean(); ?>
 
+<!-- Appel du template -->
 <?php require('template.php'); ?>

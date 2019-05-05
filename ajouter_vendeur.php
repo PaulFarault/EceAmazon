@@ -1,3 +1,5 @@
+<!-- Page permettant aux utilisateur au statut d'administrateur d'ajouter des vendeurs via leur adresse mail -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>
@@ -42,6 +44,7 @@
     </form>
 
 </div>
-<?php $content = ob_get_clean(); ?>
 
+<!-- Appel du template -->
+<?php $content = ob_get_clean(); ?>
 <?php require('template.php'); ?>

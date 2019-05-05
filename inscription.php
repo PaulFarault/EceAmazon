@@ -1,3 +1,5 @@
+<!-- Page d'inscription : permet à nimporte quel utilisateur de s'inscrire avec un statut acheteur -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>

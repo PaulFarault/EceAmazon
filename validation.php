@@ -1,3 +1,6 @@
+<!-- La page Validation résume, à la fin de l'achat, les informations rentrées par 
+    les utilisateurs, avant qu'ils valident l'achat -->
+
 <?php  $title = 'Panier'; ?>
 
 <?php ob_start(); ?>
