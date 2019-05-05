@@ -3,28 +3,38 @@
 
 <?php ob_start(); ?>
 
-<div class="row">
-	<div class="col-sm">
-		<div class="card">
-			<div class="card-body">
-				<h3 class="card-title text-center mb-4 mt-1">Se connecter</h3>
-                
-                <form method="link" action="compte.php">
-                  <div class="row">
-                    <div class="col">
-                        <label for="inputPhoto">Ajouter une photo ou une vidéo :</label>
-                        <input type="photo" class="form-control" placeholder="Ajouter un fichier">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                  </div>
-                </form>
+    <form method="link" action="admin.php">
+        
+        <div class="form-row">
+        
+            <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
+                <label for="inputEmail">Adresse mail :</label>
+                <input type="mail" class="form-control" id="inputEmail" placeholder="adresse@exemple.com">
+                </div>  
+            </div>
+        <div/>
             
-		  </div>
-	   </div>
-    </div>
-</div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
+                <label for="inputPassword">Mot de passe :</label>
+                <input type="mail" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                </div>           
+            </div>
+        </div>
+            
+            <div class="form-group col-md-5">
+            </div>
+            <div class="form-group col-md-7">
+                
+                
+            </div>
+            
+        </div>
+        
+    </form>
+	
 
 
 <?php $content = ob_get_clean(); ?>
