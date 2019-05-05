@@ -82,19 +82,28 @@
 		<?=$content ?>
 	</div>
 
-	<!-- Footer -->
-	<footer class="page-footer font-small bg-dark pt-2">
+    
+    
+    <!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-3">
+
+    <!-- Footer Elements -->
     <div class="container">
-      <div class="row">
-        <!-- Colonne gauche : contact-->
-        <div class="col-md-4">
-          <a href="mailto:thomas.laurent@edu.ece.fr"><p>Nous contacter par mail</p></a>
+        
+        <div class="footer-copyright height=100px "  height="100px" > 
+            
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <a><img src="/img/linkedin.png" height="30px">          </a>
+                    <a><img src="/img/twitter.png" height="30px">          </a>
+                    <a><img src="/img/nstagram.png" height="30px">          </a>
+                    <a><img src="/img/classroom.png" height="30px">          </a>
+                </div>
+                <div class="form-group col-md-7">
+                    &copy; ECE Amazon : Projet Web Dynamique 2019 - Paul Faurault et Thomas Laurent
+                </div>
+            </div>
         </div>
-        <!-- Colonne droite : copyright-->
-        <div class="col-md-8 ">
-            <p>&copy; ECE Amazon : Projet Web Dynamique 2019 - Paul Faurault et Thomas LAURENT</p>
-        </div>
-      </div>
     </div>
   </footer>
 
