@@ -7,7 +7,7 @@
 	<h1>Ajouter un article</h1>
     
     
-    <form method="link" action="index.php">
+    <form method="link" action="vendre.php">
         
         <div class="form-row">
             <div class="form-group col-md-6">
