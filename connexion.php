@@ -31,7 +31,6 @@
             <div class="form-group col-md-3">
                 <button type="submit" class="btn btn-primary">Se connecter</button>
             </div>
-            
         </div>
         
     </form>
