@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- JS (jQuery, Popper, Bootstrap) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -93,10 +94,10 @@
             
             <div class="form-row">
                 <div class="form-group col-md-5">
-                    <a><img src="/img/linkedin.png" height="30px">          </a>
-                    <a><img src="/img/twitter.png" height="30px">          </a>
-                    <a><img src="/img/nstagram.png" height="30px">          </a>
-                    <a><img src="/img/classroom.png" height="30px">          </a>
+                    <a href="https://www.linkedin.com/school/ece-paris/"><img src="/img/linkedin.png" height="30px">          </a>
+                    <a href="https://twitter.com/IngenieursECE"><img src="/img/twitter.png" height="30px">          </a>
+                    <a href="https://www.instagram.com/eceparis.lyon/?hl=fr"><img src="/img/instagram.png" height="30px">          </a>
+                    <a href="https://www.ece.fr/ecole-ingenieur/"><img src="/img/classroom.png" height="30px"></a>
                 </div>
                 <div class="form-group col-md-7">
                     &copy; ECE Amazon : Projet Web Dynamique 2019 - Paul Faurault et Thomas Laurent
