@@ -7,7 +7,7 @@
 	<h1>Ajouter un vendeur</h1>
     
         
-    <form method="link" action="admin.php">
+    <form method="link" action="gestion_vendeur.php">
     
         <div class="form-row">
             <div class="form-group col-md-6">

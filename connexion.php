@@ -26,9 +26,10 @@
             
         <div class="form-row">
             
-            <div class="form-group col-md-8">
+            <div class="form-group col-md-7">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-5">
+                <a href="inscription.php"><button type="button" class="btn btn-primary">S'inscrire</button></a>
                 <button type="submit" class="btn btn-primary">Se connecter</button>
             </div>
         </div>
