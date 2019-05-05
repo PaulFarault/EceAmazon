@@ -55,3 +55,9 @@ h1 {
 .liste-item:hover span {
 	color:white;
 }
+a {
+	text-decoration: none;
+}
+a :hover {
+	text-decoration: none;
+}
